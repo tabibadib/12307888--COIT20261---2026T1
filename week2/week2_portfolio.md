@@ -148,6 +148,8 @@ Destination Host Unreachable
 
 100% packet loss
 
+![Invalid IP ping](Ping-Basics-12307888-error.png)
+
 ### Confirms behaviour when destination does not exist
 
 ### Ping with Options
@@ -171,6 +173,8 @@ Controlled packet transmission
 Larger packet size slightly increases delay
 
 Custom count limits execution
+
+![Ping with different option](Ping-Basics-12307888-options.png)
 
 ### Reflection
 
