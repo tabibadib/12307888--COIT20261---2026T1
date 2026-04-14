@@ -39,7 +39,7 @@ The aim of this week was to gain hands-on experience with:
   - Date
 - Assigned IP label: **10.10.1.1**
 - 
-![Network Screenshot](./Week1/GNS-Intro-12307888-Network.png)
+![Network Diagram](GNS-Intro-12307888-Network.png)
 
 
 
