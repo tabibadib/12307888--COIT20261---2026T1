@@ -38,7 +38,7 @@ The aim of this week was to gain hands-on experience with:
   - Student ID
   - Date
 - Assigned IP label: **10.10.1.1**
-- 
+
 ![Network Diagram](GNS-Intro-12307888-Network.png)
 
 
@@ -80,6 +80,8 @@ ip address show
 
 ## Testing Results
 IP Address Verification
+![IP Address](GNS-Intro-12307888-ipaddress.png)
+
 
 # The output confirmed:
 
