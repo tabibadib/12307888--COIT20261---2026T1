@@ -56,10 +56,15 @@ iface eth0 inet static
 ---   
 ### Explanation:
 auto eth0 → Enables interface on startup
+
 iface eth0 inet static → Sets static IP mode
+
 address → Assigned IP address
+
 netmask → Defines subnet (/24)
+
 ip_forward=0 → Disables routing (host behavior)
+
 ---
 
 ### Task 3: Running & Testing
