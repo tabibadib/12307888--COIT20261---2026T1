@@ -75,15 +75,15 @@ ip_forward=0 → Disables routing (host behavior)
 Started the node
 Opened console in browser
 
-## Ran command:
+### Ran command:
 ip address show
 
-## Testing Results
+### Testing Results
 IP Address Verification
 ![IP Address](GNS-Intro-12307888-ipaddress.png)
 
 
-# The output confirmed:
+### The output confirmed:
 
 Interface: eth0
 IP Address: 10.10.1.1/24
@@ -95,7 +95,7 @@ This week provided a strong foundation in network simulation and Linux networkin
 
 One key insight was understanding the importance of IP forwarding. Even though the Linux host can act as a router, disabling forwarding ensures it behaves correctly as an end device.
 
-# IP Forwarding Check
+## IP Forwarding Check
 net.ipv4.ip_forward = 0
 
 Confirms device is acting as a host (not router)
