@@ -33,6 +33,8 @@ The objective of this lab was to:
 
 ## Task 1: Setting Static IP Addresses
 
+![Network Diagram](Setting-IP-12307888-network.png)
+
 ### Network Setup
 - Created project: **Setting-IP-12307888**
 - Added:
@@ -103,6 +105,15 @@ ip address show
 ✔ All hosts successfully configured with correct IP addresses
 
 ✔ All interfaces are active
+
+![Host 1](Setting-IP-12307888-host1.png)
+
+![Host 2](Setting-IP-12307888-host2.png)
+
+![Host 3](Setting-IP-12307888-host3.png)
+
+![Host 4](Setting-IP-12307888-host4.png)
+
 
 ### Task 2: Network Connectivity Testing
 
