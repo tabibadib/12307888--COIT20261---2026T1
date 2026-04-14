@@ -30,6 +30,10 @@ The aim of this week was to gain hands-on experience with:
 ## Technical Activities
 
 ### Task 1: GNS3 Project Creation
+## Exported Project: 
+[Network Diagram](GNS-Intro-12307888.gns3project)
+
+
 - Created a project: **GNS-Intro-12307888**
 - Added a **Linux Host (Host1)**
 - Inserted annotations:
@@ -86,7 +90,9 @@ IP Address Verification
 ### The output confirmed:
 
 Interface: eth0
+
 IP Address: 10.10.1.1/24
+
 Status: UP and active
 
 ### Reflection
