@@ -1,6 +1,6 @@
-# 📄 Week 01 – GNS3 Basics & Environment Setup
+# Week 01 – GNS3 Basics & Environment Setup
 
-## 👤 Student Details
+## Student Details
 - **Name:** Tabib Al Adib  
 - **Student ID:** 12307888  
 - **Unit:** COIT20261 – Network Services and Automation  
@@ -9,7 +9,7 @@
 
 ---
 
-## 🎯 Objective
+## Objective
 The aim of this week was to gain hands-on experience with:
 - Setting up GNS3 environment  
 - Creating a basic network topology  
@@ -18,7 +18,7 @@ The aim of this week was to gain hands-on experience with:
 
 ---
 
-## 🧠 Key Concepts Learned
+## Key Concepts Learned
 - **Network Simulation:** Using GNS3 to create virtual network environments  
 - **Static IP Configuration:** Assigning IP manually via `/etc/network/interfaces`  
 - **Linux Networking Commands:** Using `ip address show`  
@@ -27,9 +27,9 @@ The aim of this week was to gain hands-on experience with:
 
 ---
 
-## 🛠️ Technical Activities
+## Technical Activities
 
-### 🔹 Task 1: GNS3 Project Creation
+### Task 1: GNS3 Project Creation
 - Created a project: **GNS-Intro-12307888**
 - Added a **Linux Host (Host1)**
 - Inserted annotations:
@@ -41,7 +41,7 @@ The aim of this week was to gain hands-on experience with:
 
 ---
 
-### 🔹 Task 2: Static IP Configuration
+### Task 2: Static IP Configuration
 
 The IP address was configured by editing:
 /etc/network/interfaces
@@ -52,26 +52,33 @@ iface eth0 inet static
    address 10.10.1.1
    netmask 255.255.255.0
    up sysctl net.ipv4.ip_forward=0
-Explanation:
+
+---   
+### Explanation:
 auto eth0 → Enables interface on startup
 iface eth0 inet static → Sets static IP mode
 address → Assigned IP address
 netmask → Defines subnet (/24)
 ip_forward=0 → Disables routing (host behavior)
-🔹 Task 3: Running & Testing
+---
+
+### Task 3: Running & Testing
 Started the node
 Opened console in browser
-Ran command:
-ip address show
-🧪 Testing Results
-✅ IP Address Verification
 
-The output confirmed:
+## Ran command:
+ip address show
+
+## Testing Results
+IP Address Verification
+
+# The output confirmed:
 
 Interface: eth0
 IP Address: 10.10.1.1/24
 Status: UP and active
-✅ IP Forwarding Check
+
+# IP Forwarding Check
 net.ipv4.ip_forward = 0
 
-✔ Confirms device is acting as a host (not router)
+Confirms device is acting as a host (not router)
