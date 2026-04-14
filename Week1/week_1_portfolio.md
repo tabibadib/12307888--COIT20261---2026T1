@@ -89,6 +89,12 @@ Interface: eth0
 IP Address: 10.10.1.1/24
 Status: UP and active
 
+### Reflection
+
+This week provided a strong foundation in network simulation and Linux networking. I learned how to manually configure a static IP address, which is essential for controlling network behavior in real-world scenarios.
+
+One key insight was understanding the importance of IP forwarding. Even though the Linux host can act as a router, disabling forwarding ensures it behaves correctly as an end device.
+
 # IP Forwarding Check
 net.ipv4.ip_forward = 0
 
