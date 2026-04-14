@@ -56,9 +56,9 @@ Network: **10.10.2.0/24**
 
 ### Method 1: GNS3 Configure
 - IP set before starting node
-- 
+
 - Automatically applied on startup
-- 
+
 ✔ Persistent  
 
 ---
@@ -115,7 +115,8 @@ ip address show
 ![Host 4](Setting-IP-12307888-host4.png)
 
 
-### Task 2: Network Connectivity Testing
+## Task 2: Network Connectivity Testing
+---
 
 ### Basic Ping Test
 
@@ -132,6 +133,8 @@ Successful replies received
 RTT values observed
 
 Confirms network connectivity between hosts
+
+![Simple Ping](Ping-Basics-12307888-simple.png)
 
 ### Ping to Invalid IP
 
