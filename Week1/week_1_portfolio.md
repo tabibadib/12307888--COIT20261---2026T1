@@ -41,6 +41,8 @@ The aim of this week was to gain hands-on experience with:
 - 
 ![Network Screenshot](./Week1/GNS-Intro-12307888-Network.png)
 
+![Switched LAN with One Switch and Four PCs](./images/week4-task3-lana.png)
+
 ---
 
 ### Task 2: Static IP Configuration
