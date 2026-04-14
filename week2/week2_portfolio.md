@@ -53,8 +53,10 @@ Network: **10.10.2.0/24**
 ---
 
 ### Method 1: GNS3 Configure
-- IP set before starting node  
-- Automatically applied on startup  
+- IP set before starting node
+- 
+- Automatically applied on startup
+- 
 ✔ Persistent  
 
 ---
@@ -70,13 +72,17 @@ nano /etc/network/interfaces
 ### Configuration:
 
 auto eth0
+
 iface eth0 inet static
+
    address 10.10.2.3
+   
    netmask 255.255.255.0
 
 ### Applied changes:
 
 ifdown eth0
+
 ifup eth0
 
 ✔ Persistent after reboot
@@ -85,6 +91,7 @@ ifup eth0
 ip address add 10.10.2.4/24 dev eth0
 
 ✔ Immediate effect
+
 ❌ Temporary (lost after reboot)
 
 ### Verification
@@ -94,6 +101,7 @@ Command used:
 ip address show
 
 ✔ All hosts successfully configured with correct IP addresses
+
 ✔ All interfaces are active
 
 ### Task 2: Network Connectivity Testing
@@ -107,7 +115,9 @@ ping 10.10.2.2
 ### Result:
 
 Successful replies received
+
 0% packet loss
+
 RTT values observed
 
 Confirms network connectivity between hosts
@@ -121,6 +131,7 @@ ping 10.10.2.5
 ### Result:
 
 Destination Host Unreachable
+
 100% packet loss
 
 ### Confirms behaviour when destination does not exist
@@ -130,17 +141,21 @@ Destination Host Unreachable
 ### Commands:
 
 ping -c 5 -s 100 10.10.2.3
+
 ping -c 3 -s 20 10.10.2.4
 
 ### Explanation:
 
 -c → Number of packets
+
 -s → Packet size
 
 ### Result:
 
 Controlled packet transmission
+
 Larger packet size slightly increases delay
+
 Custom count limits execution
 
 ### Reflection
