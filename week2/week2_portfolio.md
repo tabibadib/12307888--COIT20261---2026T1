@@ -156,7 +156,11 @@ Destination Host Unreachable
 
 ### Commands:
 
-ping -c 5 -s 100 10.10.2.3
+ping -c 5 10.10.2.2
+
+ping -c 3 10.10.2.2
+
+ping -s 100 10.10.2.3
 
 ping -c 3 -s 20 10.10.2.4
 
