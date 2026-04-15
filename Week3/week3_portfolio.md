@@ -41,6 +41,7 @@ Two hosts were used:
 nc -l -p 11111
 
 ## Testing Results
+![Message Capture] (Netcat-Basics-12307888-client-server.png)
 ### Message Exchange
 #### From Client → Server:
 Name: Tabib Al Adib
