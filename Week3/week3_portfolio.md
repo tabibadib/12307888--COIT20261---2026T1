@@ -41,14 +41,15 @@ Two hosts were used:
 nc -l -p 11111
 
 ## Testing Results
-![Message Capture] (Netcat-Basics-12307888-client-server.png)
+![Message Capture](Netcat-Basics-12307888-client-server.png)
+
 ### Message Exchange
 #### From Client → Server:
 Name: Tabib Al Adib
 ID: 12307888
 Communication was successful:
-Client sent message ✔
-Server received message ✔
+- Client sent message ✔
+- Server received message ✔
 
 ### This confirms:
 
@@ -107,7 +108,7 @@ This confirms:
 
 ### Capture File
 
-- `New-Capture-Basics-12307888-ping-netcat.pcap`
+[Capture-Basics-12307888-ping-netcat.pcap](Capture-Basics-12307888-ping-netcat.pcap)
 
 
 ---
