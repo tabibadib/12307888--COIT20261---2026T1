@@ -21,6 +21,8 @@
 ## Network Topology
 ![Network Topology](View-Routes-12307888-network.png)
 
+[Project File: view-routes-12307888.gns3project](view-routes-12307888.gns3project)
+
 ---
 
 ##  IP Addressing Scheme
@@ -100,6 +102,8 @@ This task demonstrated how routing works between subnets. I learned that hosts r
 ## OSPF Network Topology
 
 ![Network Diagram](OSPF-Basics-12307888-network.png)
+
+[Project File: OSPF-Basics-12307888.gns3project](OSPF-Basics-12307888.gns3project)
 
 ## OSPF Neighbour Routers (FRR1)
 
