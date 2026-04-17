@@ -46,20 +46,26 @@
 
 - default via 10.10.1.1 dev eth0
 - 10.10.1.0/24 dev eth0 scope link src 10.10.1.88
+  
+![Host 1](IP-Address-Routes-12307888-host1.png)
+
 
 ### Host2
 - default via 10.10.1.1 dev eth0
 - 10.10.1.0/24 dev eth0 scope link src 10.10.1.89
+  
 ![Host 2](IP-Address-Routes-12307888-host2.png)
 
 ### Host3
 - default via 10.10.2.1 dev eth0
 - 10.10.2.0/24 dev eth0 scope link src 10.10.2.88
+
 ![Host 3](IP-Address-Routes-12307888-host3.png)
 
 ### Router
 - 10.10.1.0/24 dev eth0 scope link src 10.10.1.1
 - 10.10.2.0/24 dev eth1 scope link src 10.10.2.1
+  
 ![Router](IP-Address-Routes-12307888-router.png)
 
 ### Forwarding Status
@@ -92,7 +98,8 @@ This task demonstrated how routing works between subnets. I learned that hosts r
 - Observe path changes using traceroute
 
 ## OSPF Network Topology
-![Network Diagram](OSPF-Basics-12307888-network)
+
+![Network Diagram](OSPF-Basics-12307888-network.png)
 
 ## OSPF Neighbour Routers (FRR1)
 
@@ -133,21 +140,24 @@ FRR2 – Full Routing Table
 ### Before Link Failure
 traceroute 10.10.6.102
 
-### Path Observed:
+### Path Observed: 
+#### Host1 → FRR1 → FRR2 → FRR4 → Host2  
 
 - 10.10.1.1
 - 10.10.3.3
 - 10.10.4.4
 - 10.10.6.102
 
+
 ![OSPF-Basics-traceroute-before](OSPF-Basics-traceroute-before.png)
 
 ---
 
-### After Link Failure (NETem stopped)
+### After Link Failure (A NETem node was stopped to simulate link failure)
 traceroute 10.10.6.102
 
 ### New Path:
+#### Host1 → FRR1 → FRR3 → FRR4 → Host2
 
 - 10.10.1.1
 - 10.10.2.2
@@ -155,6 +165,12 @@ traceroute 10.10.6.102
 - 10.10.6.102
 
 ![OSPF-Basics-traceroute-after](OSPF-Basics-traceroute-after.png)
+
+## Observation
+
+Before the link failure, packets followed the shortest path through FRR2. After disabling the link, OSPF dynamically recalculated the routes and redirected traffic through FRR3. This demonstrates OSPF’s ability to automatically adapt to network changes and maintain connectivity without manual intervention.
+
+---
 
 ## Reflection (Task 2)
 
