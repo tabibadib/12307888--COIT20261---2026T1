@@ -124,6 +124,7 @@ ip link set eth0.20 up
 
 sysctl -w net.ipv4.ip_forward=1
 
+
 ## Switch VLAN & Port Details
 
 ![ Vlan-Router-12307888-ports](Vlan-Router-12307888-ports.png)
@@ -134,17 +135,22 @@ sysctl -w net.ipv4.ip_forward=1
 
 ![Vlan-Router-12307888-host1-routes](Vlan-Router-12307888-host1-routes.png)
 
+
 ### Host2
 
 ![Vlan-Router-12307888-host2-routes](Vlan-Router-12307888-host2-routes.png)
+
 
 ### Host3
 
 ![Vlan-Router-12307888-host3-routes](Vlan-Router-12307888-host3-routes.png)
 
+
 ### Host4
 
 ![Vlan-Router-12307888-host4-routes](Vlan-Router-12307888-host4-routes.png)
+
+
 
 ## Testing Results
 
@@ -165,7 +171,7 @@ This task demonstrated how inter-VLAN routing works using a router. Initially, V
 - Trunk ports carry multiple VLANs
 - Router sub-interfaces handle each VLAN
 - Inter-VLAN routing enables full network communication
-- 
+  
 ### Key Insights
 - VLANs improve segmentation but require routing for communication
 - Router-on-a-stick is an efficient design
